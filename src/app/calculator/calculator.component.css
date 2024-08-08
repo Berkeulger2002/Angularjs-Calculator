@@ -1,0 +1,169 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.calculator {
+  width: 400px;
+  border-radius: 50px;
+  margin-left: 750px;
+  margin-top: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background: var(--bg-color);
+}
+
+.light-mode .calculator {
+  background-color: aqua;
+}
+
+.dark-mode .calculator {
+  background-color: black;
+}
+
+.display {
+  background-color: var(--bg-color);
+  padding: 20px;
+  text-align: right;
+  font-size: 1.5rem;
+  color: var(--font-color);
+}
+
+.equation {
+  color: #000000;
+}
+
+.result {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.buttons {
+  display: flex;
+  border-radius: 50px;
+  background: var(--bg-color);
+}
+
+.light-mode .buttons {
+  background-color: aqua;
+}
+
+.dark-mode .buttons {
+  background-color: black;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.top-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  background: var(--bg-color);
+  border-radius: 50px;
+  margin: 5px;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-size: 1.2rem;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.light-mode button {
+  background-color: rgb(41, 160, 196);
+  color: white;            
+}
+
+.dark-mode button {
+  background-color: rgb(59, 59, 59);
+  color: rgb(241, 241, 241);            
+}
+
+button:hover {
+  background-color: rgb(252, 251, 251);
+}
+
+.process {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
+  background: var(--bg-color);
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0;
+  width: 50%; /* Set the width to 50% */
+  margin-left: 25%; /* Center the container by setting left margin */
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-label {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background-color: #e0dddd;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-label .toggle-inner {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: rgb(97, 79, 79);
+  border-radius: 50%;
+  transition: left 0.3s;
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-inner {
+  left: 33px;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #19191a;
+}
+
+.dark-mode {
+  --bg-color: linear-gradient(220deg, rgb(84, 85, 85) 0%, rgb(0, 0, 0) 100%);
+  --font-color: rgb(32, 29, 29);
+}
+
+.light-mode {
+  --bg-color: linear-gradient(220deg, rgba(165, 214, 235, 1) 0%, rgba(0, 195, 255, 1) 100%);
+  --font-color: black;
+}
+
+.history {
+  padding-left: 50px;
+  padding-top: 15px;
+  color: var(--font-color);
+}
