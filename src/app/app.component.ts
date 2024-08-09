@@ -51,16 +51,16 @@ export class AppComponent {
     }
   }
 
-  Operator(operator: string) {
-    if (this.display === '0' && operator !== '+/-' && operator !== '/' && operator !== '÷') {
+  Proces(Proces: string) {
+    if (this.display === '0' && Proces !== '+/-' && Proces !== '/' && Proces !== '÷') {
       return;
     }
 
     const lastChar = this.display[this.display.length - 1];
-    if (['+', '-', '*', '÷'].includes(lastChar) && ['+', '-', '*', '÷'].includes(operator)) {
-      this.display = this.display.slice(0, -1) + operator;
+    if (['+', '-', '*', '÷'].includes(lastChar) && ['+', '-', '*', '÷'].includes(Proces)) {
+      this.display = this.display.slice(0, -1) + Proces;
     } else {
-      this.display += operator;
+      this.display += Proces;
     }
   }
 
