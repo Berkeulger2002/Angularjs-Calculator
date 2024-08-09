@@ -6,5 +6,5 @@ This project contains 4 basic transactions and can record and display the last t
 ## Website Link
 https://angularjscal.vercel.app/
 ## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+![Aydınlık modu](https://github.com/user-attachments/assets/748e0794-3a16-4d68-924b-4c324096c711)
+![Karanlık modu](https://github.com/user-attachments/assets/af68ca94-5a67-48b3-b2cf-cebe0fcad704)
